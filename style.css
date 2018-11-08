@@ -4,6 +4,10 @@ html { box-sizing: border-box; }
 
 body {
     text-rendering: optimizeLegibility;
+    max-width: 100%;
+    display: flex;
+    background-color: #f5f5f5;
+    
 }
 
 /*
@@ -21,3 +25,116 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+.zbozi {
+    width: 670px;
+    height: 440px;
+    box-sizing: border-box;
+    box-align: center;
+    border-radius: 20px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    margin: 6em;   
+}
+.vizual {
+    background: linear-gradient(#06d7c1, #50cc49);
+    color: white;
+    height: 440px;
+    width: 335px; 
+    padding: 30px;
+    float: left;
+}
+.slogan {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+.bota {
+    position: absolute;
+    left: 20px;
+}
+.cenovka {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 130px;
+}
+.cenovka .zaruka {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+}
+.cenovka .cena {
+    font-size: 28px;
+    font-weight: bold 500;
+    text-align: right;
+}
+.detaily {
+    height: 440px;
+    width: 335px;
+    background-color: white;
+    padding: 30px;
+    float: right;
+}
+.nazev {
+    font-size: 20px;
+    font-weight: bold 500;
+    text-transform: uppercase;
+    text-align: center;   
+}
+.produkt {
+    font-size: 14px;
+    color: #959595;
+}
+.popis {
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 1px solid #06d7c1;
+    padding-block-end: 30px;
+}
+li {
+    display: inline-flex;
+}
+ul {
+    box-align: center;
+    margin: 0;
+    padding: 0;
+}
+.parametr {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.velikosti {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+}
+.vybrana {
+    color: #f15f42;
+    border: 1px solid #f15f42;
+    padding: 2px;
+    border-radius: 100%;
+}
+.tlacitko {
+    display: block;
+    height: 40px;
+    width: 120px;
+    border: 1px solid #f15f42; 
+    border-radius: 10px;
+    background-color: #f15f42;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: 80%;
+    margin-top: 50px;
+}
+
+/* 
+- nefunguje mi border-radius kolem vizualu
+- nefungují mi předepsaná odsazení obsahu od rámečku, ladila jsem vizuálně podle layoutu
+- "ul" má tady smysl?
+
+ ----- */
