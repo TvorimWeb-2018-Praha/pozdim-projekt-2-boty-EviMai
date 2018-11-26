@@ -2,13 +2,7 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
-body {
-    text-rendering: optimizeLegibility;
-    max-width: 100%;
-    display: flex;
-    background-color: #f5f5f5;
-    
-}
+
 
 /*
  BARVY
@@ -26,15 +20,29 @@ body {
 
 /* ----- zde zacni psat vlastni css ----- */
 
+
+body {
+    text-rendering: optimizeLegibility;
+    display: flex;
+    background-color: white;
+    max-width: 100%;
+}
+.podklad {
+    background-color:  #f5f5f5;
+    margin: auto;
+    padding: 80px 120px;
+}
 .zbozi {
     width: 670px;
     height: 440px;
     box-sizing: border-box;
     box-align: center;
-    border-radius: 20px;
     font-family: 'Rubik', sans-serif;
-    display: flex;
-    margin: 6em;   
+    margin: auto;
+    background-color: #f5f5f5; 
+    box-shadow: 2px 2px 2px 2px  #f5f5f5;
+    position: relative;
+    
 }
 .vizual {
     background: linear-gradient(#06d7c1, #50cc49);
@@ -43,6 +51,9 @@ body {
     width: 335px; 
     padding: 30px;
     float: left;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
 }
 .slogan {
     font-size: 16px;
@@ -51,7 +62,8 @@ body {
 }
 .bota {
     position: absolute;
-    left: 20px;
+    left: -12%;
+    bottom: 5px;
 }
 .cenovka {
     position: absolute;
@@ -65,7 +77,7 @@ body {
 }
 .cenovka .cena {
     font-size: 28px;
-    font-weight: bold 500;
+    font-weight: 500;
     text-align: right;
 }
 .detaily {
@@ -73,13 +85,16 @@ body {
     width: 335px;
     background-color: white;
     padding: 30px;
-    float: right;
+    float: right; 
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 .nazev {
     font-size: 20px;
     font-weight: bold 500;
     text-transform: uppercase;
-    text-align: center;   
+    text-align: left;   
+    
 }
 .produkt {
     font-size: 14px;
@@ -88,8 +103,8 @@ body {
 .popis {
     font-size: 14px;
     font-weight: 400;
-    border-bottom: 1px solid #06d7c1;
-    padding-block-end: 30px;
+    border-bottom: 2px solid #06d7c1;
+    padding-block-end: 30px;   
 }
 li {
     display: inline-flex;
@@ -105,9 +120,10 @@ ul {
     padding-top: 30px;
 }
 .velikosti {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;   
+    display: flex;  
+    align-items: center; 
+    justify-content: space-around;
+    align-content: flex-start;
 }
 .vybrana {
     color: #f15f42;
@@ -127,14 +143,6 @@ ul {
     text-decoration: none;
     text-align: center;
     padding: 10px;
-    margin: 10px;
     font-size: 80%;
     margin-top: 50px;
 }
-
-/* 
-- nefunguje mi border-radius kolem vizualu
-- nefungují mi předepsaná odsazení obsahu od rámečku, ladila jsem vizuálně podle layoutu
-- "ul" má tady smysl?
-
- ----- */
